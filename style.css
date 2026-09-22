@@ -1,12 +1,12 @@
-/* ---------- Палитра ---------- */
+/* ---------- Palette ---------- */
 :root {
-  --bg:        #f4f4f4;
-  --surface:   #ffffff;
-  --line:      #dcdcdc;
-  --text:      #1c1c1c;
-  --muted:     #7a7a7a;
-  --accent:    #2b2b2b;
-  --font-ui:   system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --bg:      #f4f4f4;
+  --surface: #ffffff;
+  --line:    #dcdcdc;
+  --text:    #1c1c1c;
+  --muted:   #7a7a7a;
+  --accent:  #2b2b2b;
+  --font-ui: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -45,7 +45,7 @@ h3 { font-size: 1.1rem; }
   padding: 0 24px;
 }
 
-/* ---------- Кнопка ---------- */
+/* ---------- Button ---------- */
 .btn {
   display: inline-block;
   padding: 0.85em 1.8em;
@@ -58,12 +58,9 @@ h3 { font-size: 1.1rem; }
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
 }
-.btn:hover {
-  background: var(--accent);
-  color: #fff;
-}
+.btn:hover { background: var(--accent); color: #fff; }
 
-/* ---------- Шапка ---------- */
+/* ---------- Header ---------- */
 .header {
   position: sticky;
   top: 0;
@@ -92,16 +89,11 @@ h3 { font-size: 1.1rem; }
   margin: 0;
   padding: 0;
 }
-.nav__list a {
-  font-size: 0.9rem;
-  color: var(--muted);
-}
+.nav__list a { font-size: 0.9rem; color: var(--muted); }
 .nav__list a:hover { color: var(--text); }
 
 /* ---------- Hero ---------- */
-.hero {
-  padding: 140px 0 120px;
-}
+.hero { padding: 140px 0 120px; }
 .hero__eyebrow {
   font-size: 0.8rem;
   letter-spacing: 0.18em;
@@ -109,29 +101,15 @@ h3 { font-size: 1.1rem; }
   color: var(--muted);
   margin: 0 0 24px;
 }
-.hero__title {
-  max-width: 760px;
-  font-size: 2.8rem;
-  margin-bottom: 0.6em;
-}
-.hero__subtitle {
-  max-width: 560px;
-  color: var(--muted);
-  margin: 0 0 2.4em;
-}
+.hero__title { max-width: 760px; font-size: 2.8rem; margin-bottom: 0.6em; }
+.hero__subtitle { max-width: 560px; color: var(--muted); margin: 0 0 2.4em; }
 
-/* ---------- Секции ---------- */
-.section {
-  padding: 100px 0;
-  border-top: 1px solid var(--line);
-}
+/* ---------- Sections ---------- */
+.section { padding: 100px 0; border-top: 1px solid var(--line); }
 .section__title { margin-bottom: 0.4em; }
-.section__lead {
-  color: var(--muted);
-  margin: 0 0 3em;
-}
+.section__lead { color: var(--muted); margin: 0 0 3em; }
 
-/* ---------- Обо мне ---------- */
+/* ---------- About ---------- */
 .about__inner {
   display: grid;
   grid-template-columns: 1fr 1.4fr;
@@ -143,21 +121,16 @@ h3 { font-size: 1.1rem; }
   object-fit: cover;
   filter: grayscale(100%);
 }
-.about__list {
-  padding-left: 18px;
-  color: var(--muted);
-}
+.about__list { padding-left: 18px; color: var(--muted); }
 .about__list li { margin-bottom: 0.4em; }
 
-/* ---------- Портфолио ---------- */
+/* ---------- Portfolio ---------- */
 .gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 32px 24px;
 }
-.gallery__item {
-  margin: 0;
-}
+.gallery__item { margin: 0; }
 .gallery__item img {
   width: 100%;
   aspect-ratio: 4 / 3;
@@ -172,7 +145,7 @@ h3 { font-size: 1.1rem; }
   color: var(--muted);
 }
 
-/* ---------- Услуги ---------- */
+/* ---------- Services ---------- */
 .services__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -194,7 +167,7 @@ h3 { font-size: 1.1rem; }
   letter-spacing: 0.04em;
 }
 
-/* ---------- Контакты ---------- */
+/* ---------- Contact ---------- */
 .contact__inner {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -217,7 +190,7 @@ h3 { font-size: 1.1rem; }
   letter-spacing: 0.1em;
 }
 
-/* ---------- Форма ---------- */
+/* ---------- Form ---------- */
 .form__group { margin-bottom: 24px; }
 .form__group label {
   display: block;
@@ -247,11 +220,8 @@ h3 { font-size: 1.1rem; }
 .form__group textarea { resize: vertical; }
 .form .btn { width: 100%; margin-top: 8px; }
 
-/* ---------- Подвал ---------- */
-.footer {
-  border-top: 1px solid var(--line);
-  padding: 32px 0;
-}
+/* ---------- Footer ---------- */
+.footer { border-top: 1px solid var(--line); padding: 32px 0; }
 .footer__inner {
   display: flex;
   justify-content: space-between;
@@ -272,7 +242,7 @@ h3 { font-size: 1.1rem; }
 .footer__socials a { color: var(--muted); }
 .footer__socials a:hover { color: var(--text); }
 
-/* ---------- Адаптив ---------- */
+/* ---------- Responsive: 900 px ---------- */
 @media (max-width: 900px) {
   .about__inner,
   .contact__inner { grid-template-columns: 1fr; gap: 40px; }
@@ -281,6 +251,7 @@ h3 { font-size: 1.1rem; }
   .gallery { grid-template-columns: 1fr; gap: 32px; }
 }
 
+/* ---------- Responsive: 375 px ---------- */
 @media (max-width: 600px) {
   h1 { font-size: 1.9rem; }
   .hero { padding: 80px 0 70px; }
